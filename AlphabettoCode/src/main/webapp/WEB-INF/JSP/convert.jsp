@@ -34,5 +34,8 @@
 		
 	</form:form>
 
+<h1> the convertedSetntance is ${convert.getConverted_setntance()}</h1>
+
+
 </body>
 </html>

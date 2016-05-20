@@ -16,8 +16,8 @@ public class Convert {
 		return convertedSetntance;
 	}
 
-	public void setConverted_setntance(String convertedSetntance) {
-		convertedSetntance = convertedSetntance;
+	public void setConverted_setntance(String convSetntance) {
+		convertedSetntance = convSetntance;
 	}
 
 	public String getsentence () {
@@ -56,15 +56,19 @@ public class Convert {
 		
 		for (int i = 0; i < phoneticAlphabetsentence .size(); i++) {
 			
-			if(i==0)//WHY
+			if(i==0)
 			{
 				convertedSetntance =phoneticAlphabetsentence .get(i);
 			}
+			else 
+			{
+				convertedSetntance +=phoneticAlphabetsentence .get(i);
+			}
 			
-			convertedSetntance +=phoneticAlphabetsentence .get(i);
+			convertedSetntance=convertedSetntance+"  ";
 			
 		}
-		System.out.println("convertsentence IS ===="+convertedSetntance);
+		System.out.println("From internal JAVA Class : converted sentence is ===="+convertedSetntance);
 	}
 	
 }
